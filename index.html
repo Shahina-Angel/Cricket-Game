@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="styles.css" />
-    </head>
-    <body>
-        <h2>Cricket Game</h2>
-        <button id="btn1" onclick="startBowling()" style="display: block">Start</button>
-        <button id="btn2" onclick="stopBowling()" style="display: none">Stop</button>
-        
-        <div id="scoreCard" style="display: none">
-        <div>Bowler Name</div>
-        <div id="bname">Abcd</div>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>INDIA VS AUSTRALIA 20-20 MATCH</h2>
+    <div id="teamcon" style="display: flex;">
+      <div id="teamA"></div>
+      <div id="teamB"></div>
+    </div>
+    <button id="btn1" onclick="startBowling()" style="display: block;">
+      Start
+    </button>
+    <button id="btn2" onclick="stopBowling()" style="display: none;">
+      Stop
+    </button>
+    <div id="msg1" style="display: none;" class="mr15"></div>
+    <div id="scoreCard" style="display: none;" class="scoreCard mr15">
+      <div class="test">
+        <div class="bold">Bowler Name</div>
+        <div id="bname">-</div>
+      </div>
 
-        <div>Overs</div>
+      <div class="test">
+        <div class="bold">Overs</div>
         <div id="overs">0</div>
+      </div>
 
-        <div>Runs</div>
+      <div class="test">
+        <div class="bold">Runs</div>
         <div id="runs">0</div>
+      </div>
 
-        <div>Wickets</div>
+      <div class="test">
+        <div class="bold">Wickets</div>
         <div id="wickets">0</div>
+      </div>
 
-        <div>Econ</div>
-        <div id="econ">0</div>
-
-        <div>0s</div>
-        <div id="run0">0</div>
-
-        <div>4s</div>
+      <div class="test">
+        <div class="bold">4s</div>
         <div id="run4">0</div>
+      </div>
 
-        <div>6s</div>
+      <div class="test">
+        <div class="bold">6s</div>
         <div id="run6">0</div>
+      </div>
 
-        <div>WD</div>
+      <div class="test">
+        <div class="bold">WD</div>
         <div id="wd">0</div>
+      </div>
 
-        <div>NB</div>
+      <div class="test">
+        <div class="bold">NB</div>
         <div id="nb">0</div>
+      </div>
     </div>
 
-        <script src="script.js"></script>
-    </body>
+    <div id="teamAResults" style="display: none;" class="mr15">
+      <div><strong>India: </strong><span id="scoreA"></span></div>
+      <div>
+        <strong>Australia: </strong
+        ><span id="scoreB"
+          ><span>Target - </span><span id="targetB"></span
+          ><span style="margin-left: 10px;">Overs - 20</span></span
+        >
+      </div>
+    </div>
+
+    <div id="inningsResult" class="mr15">
+      <div id="batting"></div>
+      <div id="bowling" class="mr15"></div>
+    </div>
+
+    <script src="teamAPlayers.js"></script>
+    <script src="teamBPlayers.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

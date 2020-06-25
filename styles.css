@@ -1,0 +1,69 @@
+.test {
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.scoreCard {
+    justify-content: space-between;
+    width: 600px;
+}
+
+body {
+    margin: 30px;
+}
+
+h2 {
+    color: #03A9F4;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+li {
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    width: 80px;
+    display: block;
+    font-size: medium;
+    background: #03A9F4;
+    border-style: hidden;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.mr15 {
+    margin-top: 15px;;
+}
+
+#cricket {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #cricket td, #cricket th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #cricket th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .msgCls {
+    margin: 15px 0px;
+    font-weight: bold;
+    color: #03A9F4;
+  }
