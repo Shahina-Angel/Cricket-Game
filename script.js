@@ -323,7 +323,6 @@ function endInnings() {
     displayBattingScoreCard(teamAPlayers, "India Batting");
     displayBowlingScoreCard(teamBPlayers, "Australia Bowling");
   } else {
-    debugger;
     teamB.runs = scoreCard.runs;
     teamB.wickets = scoreCard.wickets;
     teamB.overs = scoreCard.overs;
